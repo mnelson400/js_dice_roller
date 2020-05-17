@@ -2,7 +2,7 @@ const numberOfDie = document.querySelector('#userDieInput');
 const rollButton = document.querySelector('#rollButton');
 const dieTotal = document.querySelector('#rollTotal');
 const showRolls = document.querySelector('#showRolls');
-const diceList = document.querySelector('#diceList');
+const diceList = document.querySelector('#allRolls');
 
 let dieRolls = [];
 rollButton.addEventListener('click', function () {
@@ -33,9 +33,9 @@ showRolls.addEventListener('click', function(){
     let position = 0;
     while (position < dieRolls.length) {
 
-        const diceArray = '<li id="dice">' + showArray[position] + '</li>';
+        const diceArray = '<li>' + showArray[position] + '</li>';
 
-        diceList.innerHTML += diceArray;
+        allRolls.innerHTML += diceArray;
 
     position += 1;
     }

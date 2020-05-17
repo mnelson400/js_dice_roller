@@ -7,10 +7,12 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <title>Kenzie Dice Roller</title>
 </head>
+
 <body>
 
     <div class="dieInput">
-        Enter The Number Of Die You Will Be Rolling:<input id="userDieInput" type="text">
+        <h4>Enter a number of dice:</h4>
+        <input id="userDieInput" type="text">
     </div>
 
     <div class="rollButtonArea">
@@ -18,7 +20,8 @@
     </div>
 
     <div class="totalArea">
-        The Total Of Dice The Rolled:<div id="rollTotal"></div>
+        <h4>Total:</h4>
+        <div id="rollTotal"></div>
     </div>
 
     <div class="showRollsArea">
@@ -26,12 +29,10 @@
     </div>
 
     <div class="diceListArea">
-            <ol id="diceList">
-
-            </ol>
-        </div>
+            <ol id="allRolls"></ol>
     </div>
  
     <script src="./assets/javascript/main.js"></script>
+
 </body>
 </html>
