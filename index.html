@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <title>Kenzie Dice Roller</title>
+    <div style="background-image: url('assets/images/casino_background.png');">
+    <title>Kenzie Dice Roller 1</title>
 </head>
 
 <body>
 
-    <div class="dieInput">
-        <h4>Enter a number of dice:</h4>
-        <input id="userDieInput" type="text">
-    </div>
+    <div class="body">
 
-    <div class="rollButtonArea">
-        <button id="rollButton">Roll!</button>
-    </div>
+        <div class="dieInput">
+            <div id="enterBox"></div>
+            <div id="dieInputImage">
+                <img src="assets/images/die_input_image.png" alt="Input Image.">
+            </div>
+            <input id="userDieInput" type="text">
+        </div>
 
-    <div class="totalArea">
-        <h4>Total:</h4>
-        <div id="rollTotal"></div>
-    </div>
+        <div class="rollButtonArea">
+            <div id="rollButton">
+                <img src="assets/images/roll_button.png" alt="Roll Button">
+            </div>
+        </div>
 
-    <div class="showRollsArea">
-        <button id="showRolls">Show All Rolls</button>
-    </div>
+        <div class="totalArea">
+            <div id="totalBox"></div>
+            <div id="totalImage">
+                <img src="assets/images/total_area_image.png" alt="Total Area.">
+            </div>
+            <div id="rollTotal"></div>
+        </div>
 
-    <div class="diceListArea">
-            <ol id="allRolls"></ol>
-    </div>
+        <div class="resetArea">          
+            <div id="resetButton">
+                <a href="index.html"><img src="assets/images/reset_button.png" alt="Reset Button"></a>
+            </div>
+        </div>
+
+        <div class="multiButtonArea">         
+            <div id="multiButton">
+                <a href="page_2.html"><img src="assets/images/game_2_button.png" alt="Game 2"></a>
+            </div>
+        </div>
  
-    <script src="./assets/javascript/main.js"></script>
+        <div class="showRollsArea">
+            <div id="showRolls">
+                <img src="assets/images/show_rolls_button.png" alt="Show Rolls.">
+            </div>
+        </div>
+
+        <div class="diceListArea">
+            <ol id="allRolls"></ol>
+        </div>
+
+    </div> 
+
+<script src="./assets/javascript/main.js"></script>
 
 </body>
 </html>
